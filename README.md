@@ -9,7 +9,7 @@ Plantuml 是一個可以透過文字畫圖的語法
 
 ### 如何使用
 請下載這份檔案 [plantuml.html](https://github.com/yoyoshenTW/hugo-shortcode-plantuml/blob/main/shortcodes/plantuml.html)
-並將他放在你 Hugo 網站的根目錄的 ==layouts/shortcodes== 底下
+並將他放在你 Hugo 網站的根目錄的 *layouts/shortcodes* 底下
 即可完成
 
 接著在你的 markdown 文件中(例如 index.md)
@@ -35,7 +35,7 @@ For related examples and writing instructions, please refer to [Plantuml](https:
 
 ### How to Use
 Please download this file [plantuml.html](https://github.com/yoyoshenTW/hugo-shortcode-plantuml/blob/main/shortcodes/plantuml.html)
-and place it in the ==layouts/shortcodes== directory at the root of your Hugo website.
+and place it in the *layouts/shortcodes* directory at the root of your Hugo website.
 This will complete the setup.
 
 In your markdown files (e.g., index.md),

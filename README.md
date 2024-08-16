@@ -8,7 +8,7 @@ Plantuml 是一個可以透過文字畫圖的語法
 ***聲明*** 此 code 是直接參考 [Mogeko's Blog](https://mogeko.me/zh-cn/posts/zh-cn/083/) 的文章以及其撰寫的 Code，手動修改為 shortcode 形式
 
 ### 如何使用
-請下載這份檔案 [plantuml.html](https://github.com/yoyoshenTW/hugo-shortcode-plantuml/blob/main/shortcodes/plantuml.html)
+請下載這份檔案 [plantuml.html](https://github.com/yoyoshenTW/hugo-shortcode-plantuml/blob/main/layouts/shortcodes/plantuml.html)
 並將他放在你 Hugo 網站的根目錄的 *layouts/shortcodes* 底下
 即可完成
 
@@ -34,7 +34,7 @@ For related examples and writing instructions, please refer to [Plantuml](https:
 ***Disclaimer*** This code is directly referenced from the article and code on [Mogeko's Blog](https://mogeko.me/zh-cn/posts/zh-cn/083/), and has been manually modified into a shortcode format.
 
 ### How to Use
-Please download this file [plantuml.html](https://github.com/yoyoshenTW/hugo-shortcode-plantuml/blob/main/shortcodes/plantuml.html)
+Please download this file [plantuml.html](https://github.com/yoyoshenTW/hugo-shortcode-plantuml/blob/main/layouts/shortcodes/plantuml.html)
 and place it in the *layouts/shortcodes* directory at the root of your Hugo website.
 This will complete the setup.
 

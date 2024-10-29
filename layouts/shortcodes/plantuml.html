@@ -1,21 +1,24 @@
 <head>
-    <script src="https://cdn.jsdelivr.net/gh/jmnote/plantuml-encoder@1.2.4/dist/plantuml-encoder.min.js" integrity="sha256-Qsk2KRBCN5qVZX7B+8+2IvQl1Aqc723qV1tBCQaVoqo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jmnote/plantuml-encoder@1.2.4/dist/plantuml-encoder.min.js" integrity="sha256-Qsk2KRBCN5qVZX7B+8+2IvQl1Aqc723qV1tBCQaVoqo=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <pre class="language-plantuml">
-    {{.Inner}}
-    </pre>
-    <script>
-    (function(){
-      let plantumlPrefix = "language-plantuml";
-      Array.prototype.forEach.call(document.querySelectorAll("[class^=" + plantumlPrefix + "]"), function(code){
+  <pre class="language-plantuml">
+  {{.Inner}}
+  </pre>
+  <script>
+  (function(){
+    let plantumlPrefix = "language-plantuml";
+    Array.prototype.forEach.call(document.querySelectorAll("[class^=" + plantumlPrefix + "]"), function(code){
+      // Check if an image already exists for this code block, credit to @j3ffyang
+      if (!code.previousElementSibling || !code.previousElementSibling.classList.contains('plantuml-image')) {
         let image = document.createElement("IMG");
         image.loading = 'lazy'; // Lazy loading
+        image.className = 'plantuml-image'; // Add a class to identify the image
         image.src = 'http://www.plantuml.com/plantuml/svg/~1' + plantumlEncoder.encode(code.innerText);
         code.parentNode.insertBefore(image, code);
         code.style.display = 'none';
-      });
-    })();
-    </script>
+      }
+    });
+  })();
+  </script>
 </body>
-</html>
